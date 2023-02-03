@@ -1,20 +1,27 @@
 import React from 'react'
 import PostSide from '../../components/PostSide/PostSide'
-import ProfileCard from '../../components/ProfileCard.jsx/ProfileCard'
-import ProfileLeft from '../../components/ProfileLeft/ProfileLeft'
+import ProfileSide from '../../components/profileSide/ProfileSide'
 import RightSide from '../../components/RightSide/RightSide'
 import './Profile.css'
 const Profile = () => {
   return (
     <div className="Profile">
-        <ProfileLeft/>
 
-        <div className="Profile-center">
-            <ProfileCard/>
-            <PostSide/>
+      <div className="logss">
+        <ProfileSide/>
+      </div>
+      
+      <div className="Pos">
+        <div className="logg">
+          <ProfileSide/>
         </div>
-
+        <PostSide />
+      </div>
+      
+      <div className="rightSide">
         <RightSide/>
+      </div>
+        
     </div>
   )
 }

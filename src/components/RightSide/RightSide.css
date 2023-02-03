@@ -9,17 +9,49 @@
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
+    font-weight: bolder;
+    
 }
 
+@media only screen and (max-width: 600px) and (min-width: 200px){
+    .Followers{
+        display:none;
+    }
 
-.navIcons>img{
-    width: 1.5rem;
-    height: 1.5rem;
+    .navIcons{
+        display: flex;
+        justify-content: space-around;
+        gap: 3.5rem;
+        color: auto;
+        background-color: white;
+        position: relative;
+    }
 }
 
+@media only screen and (max-width: 300px) and (min-width: 200px){
+    .Followers{
+        display:none;
+    }
 
-.r-button{
-    height: 3rem;
-    width: 80%;
-    align-self: center;
+    .navIcons{
+        display: flex;
+        justify-content: space-around;
+        gap: 2.2rem;
+        color: auto;
+        background-color: white;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+    .Followers{
+        display:none;
+    }
+
+    .navIcons{
+        gap: 8.5rem;
+        font-size: 3rem;
+        justify-content: space-between;
+        background: 15rem;
+    }
 }

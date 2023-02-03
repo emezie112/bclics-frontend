@@ -1,29 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import "./RightSide.css";
-import Home from "../../img/home.png";
-import Noti from "../../img/noti.png";
-import Comment from "../../img/comment.png";
-import { UilSetting } from "@iconscout/react-unicons";
-import TrendCard from "../TrendCard/TrendCard";
-import ShareModal from "../ShareModal/ShareModal";
+import { UilPresentationPlay } from '@iconscout/react-unicons'
+import { UilSearchAlt } from '@iconscout/react-unicons'
+import { UilTransaction } from '@iconscout/react-unicons'
+import { UilEnvelopeEdit } from '@iconscout/react-unicons'
+import { UilUser } from '@iconscout/react-unicons'
+import { Link } from "react-router-dom";
+import FollowersBox from "../FollowersBox/FollowersBox";
+
 
 const RightSide = () => {
-  const [modalOpened, setModalOpened] = useState(false);
   return (
     <div className="RightSide">
       <div className="navIcons">
-        <img src={Home} alt="" />
-        <UilSetting />
-        <img src={Noti} alt="" />
-        <img src={Comment} alt="" />
+      <Link style={{ textDecoration: "none", color: "inherit"}} to='/video'><UilPresentationPlay /></Link>
+      <Link style={{ textDecoration: "none", color: "inherit"}} to='/search'><UilSearchAlt /></Link> 
+      <Link style={{ textDecoration: "none", color: "inherit"}} to='/myPage'><UilTransaction /></Link>  
+      <Link style={{ textDecoration: "none", color: "inherit"}} to='/message'><UilEnvelopeEdit /></Link>  
+      <Link style={{ textDecoration: "none", color: "inherit"}} to='/account'><UilUser/></Link>  
       </div>
 
-      <TrendCard />
-
-      <button className="button r-button" onClick={() => setModalOpened(true)}>
-        Share
-      </button>
-      <ShareModal modalOpened={modalOpened} setModalOpened={setModalOpened} />
+      <div className="Followers">
+        <FollowersBox />
+     </div>
+     
     </div>
   );
 };

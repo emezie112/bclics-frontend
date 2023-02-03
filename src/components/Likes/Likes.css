@@ -1,0 +1,52 @@
+.Likes{
+    width: 100%;
+    border-radius: 0.7rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+.Likes>h2{
+    color: var(--orange);
+}
+
+.liker{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liker>div{
+    display: flex;
+    gap: 10px;
+}
+
+
+.LikerImage{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+
+.Likername{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Likername>span:nth-of-type(1){
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 200px){
+    .Likes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 99vh;
+    }
+ }

@@ -28,10 +28,6 @@
     outline: none;
 }
 
-
-
-
-
 .postOptions{
     display: flex;
     justify-content: space-around;
@@ -79,3 +75,105 @@
 }
 
 
+@media only screen and (max-width: 600px) and (min-width: 200px){
+.PostShare{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--cardColor);
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    margin-left:0.5rem;
+}
+
+.PostShare>img{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    top: -3rem;
+}
+.previewImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.PostShare>div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 0.5rem;
+}
+
+.PostShare>div>input{
+    background-color: var(--inputColor);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+
+.postOptions{
+    display: flex;
+    justify-content: space-around;
+}
+
+.option{
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+
+.option:hover{
+    cursor: pointer;
+}
+
+.ps-button{
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px
+}
+
+
+.previewImage{
+    position: relative;
+}
+
+.previewImage>svg{
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    cursor: pointer;
+}
+
+.previewImage>img{
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+}
+
+@media only screen and (max-width: 300px) and (min-width: 200px){
+    .PostShare{
+    display: flex;
+    gap: 0.5rem;
+    background-color: var(--cardColor);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    width:86%;
+    margin-left:0.5rem;
+}
+}

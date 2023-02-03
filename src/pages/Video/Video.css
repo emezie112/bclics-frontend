@@ -1,0 +1,79 @@
+.Video{
+    position: relative;
+    display: grid;
+    grid-template-columns: 26rem auto 25rem;
+    gap: 1rem;
+}
+
+.logg{
+    display:none;
+}
+
+ @media only screen and (max-width: 600px) and (min-width: 200px){
+    .Video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    }
+
+    .Icoms{
+        position: fixed;
+        bottom:0;
+    }
+
+    .logg{
+    display:none;
+    }
+    
+ }
+
+  @media only screen and (max-width: 300px) and (min-width: 200px){
+    .Pos{
+        margin-left: -1.3rem;
+        margin-right: -1.3rem;
+    }
+    .logg{
+    display:none;
+    }
+  }
+
+ @media only screen and (max-width: 1000px) and (min-width: 600px){
+    .Video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    }
+
+    .Icoms{
+        position: fixed;
+        bottom:0;
+    }
+
+    .logg{
+    display:none;
+    }
+    
+ }
+
+
+  @media only screen and (max-width: 1300px) and (min-width: 1000px){
+    .Video{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 20rem;
+    gap: 1rem;
+}
+.logg{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.logss{
+    display:none;
+}
+}

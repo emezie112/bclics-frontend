@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Cover from "../../img/cover.jpg";
 import Profile from "../../img/profileImg.jpg";
 import "./ProfileCard.css";
 
-const ProfileCard = () => {
+const ProfileCard = () =>
+{
+
   const ProfilePage = true;
   return (
     <div className="ProfileCard">
@@ -14,7 +16,13 @@ const ProfileCard = () => {
 
       <div className="ProfileName">
         <span>Zendaya MJ</span>
-        <span>Senior UI/UX Designer</span>
+
+        {/* only 3 lines after display more */}
+
+        <span>Senior UI/UX Designer very very good at it
+          Senior UI/UX Designer very very good at it
+          Senior UI/UX Designer very very good at it more...
+        </span>
       </div>
 
       <div className="followStatus">
@@ -43,6 +51,7 @@ const ProfileCard = () => {
         <hr />
       </div>
       {ProfilePage ? "" : <span>My Profile</span>}
+
     </div>
   );
 };

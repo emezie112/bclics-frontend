@@ -1,4 +1,5 @@
-import { Modal, useMantineTheme } from "@mantine/core";
+import { Modal, useMantineTheme } from "@mantine/core"; 
+import "./ProfileModel.css";
 
 function ProfileModal({ modalOpened, setModalOpened }) {
   const theme = useMantineTheme();
@@ -39,32 +40,7 @@ function ProfileModal({ modalOpened, setModalOpened }) {
           <input
             type="text"
             className="infoInput"
-            name="worksAT"
-            placeholder="Works at"
-          />
-        </div>
-
-        <div>
-          <input
-            type="text"
-            className="infoInput"
-            name="livesIN"
-            placeholder="LIves in"
-          />
-
-          <input
-            type="text"
-            className="infoInput"
-            name="Country"
-            placeholder="Country"
-          />
-        </div>
-
-        <div>
-          <input
-            type="text"
-            className="infoInput"
-            placeholder="RelationShip Status"
+            placeholder="Write ups"
           />
         </div>
 

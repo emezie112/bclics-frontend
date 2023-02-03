@@ -1,0 +1,89 @@
+.Advertise{
+    position: relative;
+    display: grid;
+    grid-template-columns: 26rem auto 25rem;
+    gap: 1rem;
+}
+
+.ads{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.ads>h1{
+  color: var(--orange);
+  font-family: var(--style);
+  font-weight:bolder;
+  cursor: pointer;
+}
+.ads>h2{
+  color: var(--orange);
+  font-family: var(--style);
+  font-weight:bolder;
+  cursor: pointer;
+}
+
+.adsPlan{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.adsSpan{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.brow{
+  display: flex;
+}
+
+.bclics {
+  color: var(--orange);
+  font-family: var(--style);
+  font-weight:bolder;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.bell{
+  margin-top: 3.5rem;
+  margin-left: 1rem;
+}
+
+.num{
+  color: white;
+  height: 1.4rem;
+  width: 1.4rem;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:auto;
+  margin-top: 3rem;
+  margin-left: -0.6rem;
+  gap: auto;
+}
+.L-button{
+  height: 3rem;
+  width: 15rem;
+  align-self: center;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 200px){
+    .Advertise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    }
+
+    .Icoms{
+        position: fixed;
+        bottom:0;
+    }
+    
+ }

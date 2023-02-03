@@ -2,13 +2,19 @@ import React, { useState } from "react";
 import "./InfoCard.css";
 import { UilPen } from "@iconscout/react-unicons";
 import ProfileModal from "../ProfileModal.jsx/ProfileModal";
+import { Link } from "react-router-dom";
 
 const InfoCard = () => {
   const [modalOpened, setModalOpened] = useState(false);
   return (
     <div className="InfoCard">
       <div className="infoHead">
-        <h4>Your Info</h4>
+        {/* <h4>Your Info</h4> */}
+        <div className="foll">
+          <Link style={{ textDecoration: "none", color: "inherit" }} to='/follow'>
+          <button className="button logout-button">Follow Users</button></Link>
+        </div>
+        <Link style={{ textDecoration: "none", color: "inherit"}} to='/'><button className="button logout-button">Logout</button></Link>
         <div>
           <UilPen
             width="2rem"
@@ -22,7 +28,7 @@ const InfoCard = () => {
         </div>
       </div>
 
-      <div className="info">
+      {/* <div className="info">
         <span>
           <b>Status </b>
         </span>
@@ -41,9 +47,9 @@ const InfoCard = () => {
           <b>Works at </b>
         </span>
         <span>Zainkeepscode inst</span>
-      </div>
+      </div> */}
 
-      <button className="button logout-button">Logout</button>
+    
     </div>
   );
 };

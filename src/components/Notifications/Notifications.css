@@ -1,0 +1,38 @@
+.Notifications{
+    position: relative;
+    display: grid;
+    grid-template-columns: 26rem auto 25rem;
+    gap: 1rem;
+}
+
+.s-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(126, 210, 221);
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+}
+
+.s-icon:hover {
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 200px){
+    .Notifications{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    }
+
+    .SIcoms{
+      position: fixed;
+      bottom:0;
+    }
+    
+ }

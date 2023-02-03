@@ -7,22 +7,44 @@ export const PostsData = [
     {
         img: postPic1,
         name: 'Tzuyu',
-        desc: "Happy New Year all friends! #2023",
+        desc: "Happy New Year all more...",
         likes: 2300,
         liked: true
     },
     {
         img: postPic2,
         name: 'Maryam',
-        desc: "Party time :)",
-        likes: 2300,
+        desc: "Party time :)  more...",
+        likes: 300,
         liked: false
 
     },
     {
         img:postPic3,
         name: "Salena Gomez",
-        desc: "At Archery Festival",
+        desc: "At Archery Festival  more...",
+        likes: 800,
+        liked: false
+    },
+    {
+        img: postPic1,
+        name: 'Tzuyu',
+        desc: "Happy New Year all more...",
+        likes: 2300,
+        liked: true
+    },
+    {
+        img: postPic2,
+        name: 'Maryam',
+        desc: "Party time :)  more...",
+        likes: 300,
+        liked: false
+
+    },
+    {
+        img:postPic3,
+        name: "Salena Gomez",
+        desc: "At Archery Festival  more...",
         likes: 800,
         liked: false
     }

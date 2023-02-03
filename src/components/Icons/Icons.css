@@ -1,0 +1,75 @@
+.Icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.navIcons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    gap: 3.5rem;
+}
+
+
+.navIcons>img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 200px){
+
+    .Icons{
+        background-color: white;
+    }
+    
+    .navIcons{
+        display: flex;
+        justify-content: space-around;
+        gap: 3.5rem;
+        color: auto;
+        background-color: white;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 300px) and (min-width: 200px){
+
+    .Icons{
+        background-color: white;
+    }
+    
+    .navIcons{
+        display: flex;
+        justify-content: space-around;
+        gap: 2.2rem;
+        color: auto;
+        background-color: white;
+        position: relative;
+    }
+}
+
+ @media only screen and (max-width: 1000px) and (min-width: 600px){
+     .Icons{
+        background-color: white;
+        
+    }
+    
+    .navIcons{
+        display: flex;
+        justify-content: space-around;
+        gap: 10rem;
+        color: auto;
+        background-color: white;
+        position: relative;
+        margin-bottom: 0;
+    }
+ }
+
+ @media only screen and (max-width: 1300px) and (min-width: 1000px){
+    .navIcons{
+        gap: 3rem;
+    }
+ }

@@ -1,30 +1,62 @@
 import React from 'react'
 import './Post.css'
-import Comment from '../../img/comment.png'
-import Share from '../../img/share.png'
-import Heart from '../../img/like.png'
-import NotLike from '../../img/notlike.png'
+import { UilHeart } from '@iconscout/react-unicons'
+import { UilCommentChartLine } from '@iconscout/react-unicons'
+import { UilShareAlt } from '@iconscout/react-unicons'
+import { UilEye } from '@iconscout/react-unicons'
+import { Link } from 'react-router-dom'
 
 
 const Post = ({data}) => {
   return (
     <div className="Post">
+      <div className="imgclass" >
         <img src={data.img} alt="" />
+        
+      </div>
+      
+      
+      <div className="postReact">
+        <img src={data.img} alt="" />
+        <div>
+          <i><UilHeart /></i>
 
-
-        <div className="postReact">
-            <img src={data.liked?Heart: NotLike} alt="" />
-            <img src={Comment} alt="" />
-            <img src={Share} alt="" />
+          <Link style={{ textDecoration: "none", color: "inherit" }} to='/likes'>
+            <span>
+            {data.likes}
+          </span></Link>
+        
+        </div>
+        <div>
+          <i><UilCommentChartLine /></i>
+          {/* {   Comments  } */}
+          <Link style={{ textDecoration: "none", color: "inherit" }} to='/comments'>
+            <span> 356 </span></Link>
+          
         </div>
 
+        <div>
+          <i><UilEye/></i>
+          {/* {   Shares   } */}
+          <Link style={{ textDecoration: "none", color: "inherit" }} to='/views'>
+            <span>3000</span></Link>
+          
+        </div>
+        <div>
+          <i><UilShareAlt /></i>
+          {/* {   Shares   } */}
+          <Link style={{ textDecoration: "none", color: "inherit" }} to='/share'>
+            <span> 52 </span></Link>
+          
+        </div>
+            
+      </div>
 
-        <span style={{color: "var(--gray)", fontSize: '12px'}}>{data.likes} likes</span>
-
+         {/* Post Details */}
         <div className="detail">
             <span><b>{data.name}</b></span>
             <span> {data.desc}</span>
-        </div>
+          </div>
     </div>
   )
 }

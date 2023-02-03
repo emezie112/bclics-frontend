@@ -1,11 +1,10 @@
 import React, { useState, useRef } from "react";
 import ProfileImage from "../../img/profileImg.jpg";
-import "./PostShare.css";
 import { UilScenery } from "@iconscout/react-unicons";
 import { UilPlayCircle } from "@iconscout/react-unicons";
-import { UilLocationPoint } from "@iconscout/react-unicons";
 import { UilSchedule } from "@iconscout/react-unicons";
 import { UilTimes } from "@iconscout/react-unicons";
+import "./PostShare.css";
 
 
 const PostShare = () => {
@@ -36,15 +35,12 @@ const PostShare = () => {
             <UilPlayCircle />
             Video
           </div>{" "}
-          <div className="option" style={{ color: "var(--location)" }}>
-            <UilLocationPoint />
-            Location
-          </div>{" "}
+          
           <div className="option" style={{ color: "var(--shedule)" }}>
             <UilSchedule />
-            Shedule
+            Text
           </div>
-          <button className="button ps-button">Share</button>
+          <button className="button ps-button">Post</button>
           <div style={{ display: "none" }}>
             <input
               type="file"

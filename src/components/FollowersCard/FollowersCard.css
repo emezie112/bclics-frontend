@@ -1,11 +1,14 @@
 
 .FollowersCard{
-    width: 100%;
+    width: 90%;
     border-radius: 0.7rem;
     gap: 1rem;
     display: flex;
     flex-direction: column;
     font-size: 13px;
+}
+.FollowersCard>h2{
+    color: var(--orange);
 }
 
 .follower{
@@ -34,14 +37,14 @@
 }
 
 .name>span:nth-of-type(1){
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 
-.fc-button{
+.pc-button{
     height: 2rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 

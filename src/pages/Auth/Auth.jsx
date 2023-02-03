@@ -1,15 +1,16 @@
 import React from "react";
 import "./Auth.css";
 import Logo from "../../img/logo.png";
+import { Link } from "react-router-dom";
 
 const Auth = () => {
   return (
     <div className="Auth">
       <div className="a-left">
-        <img src={Logo} alt="" />
+        
         <div className="Webname">
-          <h1>ZKC Media</h1>
-          <h6>Explore the ideas throughout the world</h6>
+          <h1>Bclics</h1>
+          <h6>Have fun Together With Different People</h6>
         </div>
       </div>
 
@@ -45,7 +46,9 @@ function LogIn() {
               <span style={{ fontSize: "12px" }}>
                 Don't have an account Sign up
               </span>
-            <button className="button infoButton">Login</button>
+
+            {/* linking the login to the home page same should be done for the signup */}
+            <Link style={{ textDecoration: "none", color: "inherit"}} to='/video'> <button className="button infoButton">Login </button></Link> 
           </div>
         </form>
       </div>

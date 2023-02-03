@@ -39,7 +39,10 @@
 
 .ProfileName>span:nth-of-type(1)
 {
-    font-weight: bold;
+  font-weight: bolder;
+}
+.ProfileName>span:nth-of-type(2){
+  margin-left: 1rem;
 }
 
 /* Follow Status */
@@ -87,9 +90,29 @@
 
 
   .ProfileCard>span{
-      font-weight: bold;
-      color: orange;
-      align-self: center;
-      margin-bottom: 1rem;
-      cursor: pointer;
+    font-weight: bold;
+    color: orange;
+    align-self: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
   }
+
+  .r-button{
+    height: 3rem;
+    width: 80%;
+    align-self: center;
+}
+
+@media only screen and (max-width: 300px) and (min-width: 200px){
+  .ProfileCard{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0.5rem;
+    overflow-x: clip;
+    background: var(--cardColor);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+}
