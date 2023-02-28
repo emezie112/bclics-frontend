@@ -10,7 +10,7 @@
   flex-direction: column;
   gap: 1rem;
 }
-.logoSearch {
+.LogoSearch {
   display: flex;
   width: 100%;
   justify-content: center;
