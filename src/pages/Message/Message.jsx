@@ -13,7 +13,7 @@ const Message = () => {
     <div className="Chat">
       {/* Left Side */}
       <div className="Left-side-chat">
-        <LogoSearch />
+        <div className='logoSearch'><LogoSearch /></div>
         <div className="Chat-container">
           <div className="row">
             <h2>Chats</h2>
