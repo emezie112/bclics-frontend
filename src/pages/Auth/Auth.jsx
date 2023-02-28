@@ -1,7 +1,7 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Auth.css";
 import Logo from "../../img/logo.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
   return (
@@ -19,14 +19,31 @@ const Auth = () => {
   );
 };
 function LogIn() {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    const [error , setError] = useState(false)
+    const navigate = useNavigate()
+
+    const handleClick = (e) => {
+      e.preventDefault()
+      if(username && password) {
+        navigate("/video")
+        setError(false)
+      }else {
+        setError(true)
+      }
+    }
     return (
-      <div className="a-right">
+      <section className="a-right">
         <form className="infoForm authForm">
           <h3>Log In</h3>
-  
+          {error && <p className='formError'>Please enter all credentials</p>}
           <div>
             <input
               type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               placeholder="Username"
               className="infoInput"
               name="username"
@@ -36,6 +53,8 @@ function LogIn() {
           <div>
             <input
               type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               className="infoInput"
               placeholder="Password"
               name="password"
@@ -48,10 +67,10 @@ function LogIn() {
               </span>
 
             {/* linking the login to the home page same should be done for the signup */}
-            <Link style={{ textDecoration: "none", color: "inherit"}} to='/video'> <button className="button infoButton">Login </button></Link> 
+            <button onClick={(e) => handleClick(e)} className="button infoButton">Login </button>
           </div>
         </form>
-      </div>
+      </section>
     );
   }
 function SignUp() {
