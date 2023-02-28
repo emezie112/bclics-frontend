@@ -36,7 +36,9 @@
     align-items: center;
     gap: 2rem;
   }
-  
+  .formError {
+    color: #fe5252;
+  }
   .infoInput{
     border: none;
     outline: none;
