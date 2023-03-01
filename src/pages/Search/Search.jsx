@@ -5,9 +5,12 @@ import { UilSearch } from '@iconscout/react-unicons'
 import LogoSearch from '../../components/LogoSearch/LogoSearch'
 import Posts from '../../components/Posts/Posts'
 import Icons from '../../components/Icons/Icons'
+import ImageModal from '../../components/ImageModal/ImageModal'
 
-const Search = () => {
+const Search = ({imageNum, setImageNum, imgModal, setImgModal}) => {
     return (
+    <>
+        {imgModal && <><ImageModal imgModal={imgModal} setImgModal={setImgModal} imageNum={imageNum} /></>}
         <div className="Search_page">
             <div className="logss">
               <LogoSearch />
@@ -24,7 +27,7 @@ const Search = () => {
                     <UilSearch />
                 </div>
                 </div>
-               <Posts />
+               <Posts imgModal={imgModal} setImageNum={setImageNum} setImgModal={setImgModal} />
             </div>
                 
             <div className="Icoms">
@@ -32,7 +35,7 @@ const Search = () => {
             </div>
             
         </div>
-    
+    </>
   )
 }
 
