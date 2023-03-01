@@ -1,6 +1,7 @@
 .Posts{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100vh;
+    border-radius: 0.5rem;
+    background-color: black;   
 }

@@ -2,11 +2,11 @@ import React from 'react'
 import Posts from '../Posts/Posts'
 import PostShare from '../PostShare/PostShare'
 import './PostSide.css'
-const PostSide = () => {
+const PostSide = ({setImageNum, imgModal, setImgModal}) => {
   return (
    <div className="PostSide">
        <PostShare/>
-       <Posts/>
+       <Posts imgModal={imgModal} setImageNum={setImageNum} setImgModal={setImgModal}/>
    </div>
   )
 }

@@ -1,0 +1,41 @@
+.pic-wrapper {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    min-height: 100%;
+}
+.pic-wrapper > h2 {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.picc {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.picc>img {
+    width: 550px;
+    height: 400px;
+}
+
+@media screen and (max-width: 992px) {
+    .pic-wrapper {
+        min-height: 150vh;
+    }
+    .picc {
+        height: 100vh;
+    }
+    .picc>img {
+        width: 320px;
+        height: 350px;
+    }
+}

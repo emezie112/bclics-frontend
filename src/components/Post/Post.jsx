@@ -17,7 +17,7 @@ const Post = ({data}) => {
       
       
       <div className="postReact">
-        <img src={data.img} alt="" />
+        {/* <img src={data.img} alt="" /> */}
         <div>
           <i><UilHeart /></i>
 
@@ -53,10 +53,10 @@ const Post = ({data}) => {
       </div>
 
          {/* Post Details */}
-        <div className="detail">
-            <span><b>{data.name}</b></span>
-            <span> {data.desc}</span>
-          </div>
+        {/* <div className="detail">
+          <span><b>{data.name}</b></span>
+          <span> {data.desc}</span>
+        </div> */}
     </div>
   )
 }
