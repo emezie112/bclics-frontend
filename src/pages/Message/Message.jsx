@@ -14,7 +14,7 @@ const Message = () => {
       {/* Left Side */}
       <div className="Left-side-chat">
         <div className='LogoSearch'><LogoSearch /></div>
-        <div className="Chat-container">
+        <div className="Chat-cover">
           <div className="row">
             <h2>Chats</h2>
 
