@@ -1,7 +1,9 @@
-.Posts{
+.Posts {
     display: grid;
-    grid-template-columns: auto auto;
-    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30% 30%;
+    min-height: 100vh;
+    grid-gap: 0px;
     border-radius: 0.5rem;
-    background-color: black;   
+    background-color: black;
 }

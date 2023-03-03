@@ -1,22 +1,16 @@
-.Post
-{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    /* padding: -1rem;
-    gap: -1rem;
-    margin-bottom: 1rem; */
+.Post {
+  position: relative;
 }
 
 .imgclass {
-  height: 240px;
+  height: 260px;
 }
 
 
-.imgclass>img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.imgclass>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .postReact {
@@ -30,7 +24,7 @@
   right: 1.5rem;
 }
 
-.postReact > div {
+.postReact>div {
   display: flex;
   flex-direction: column;
   font-size: 7px;
@@ -38,7 +32,7 @@
   color: white;
 }
 
-.postReact > div> i {
+.postReact>div>i {
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -67,28 +61,24 @@
   margin: 0;
 }
 
-@media only screen and (max-width: 600px) and (min-width: 200px){
-  .postReact{
-    right:0.8rem;
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+  .postReact {
+    right: 0.8rem;
   }
-  /* .imgclass{
-    height: 95vh;
-  } */
+
+  .imgclass {
+    height: 260px;
+  }
 }
 
-@media only screen and (max-width: 600px) and (min-width: 200px){
-  .Post
-{
-    display: flex;
-    flex-direction: column;
-    /* margin-left:1.1rem;
-    margin-right: 1.1rem; */
-}
+@media only screen and (max-width: 770px) and (min-width: 200px) {
+  .imgclass {
+    height: 310px;
+  }
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 600px){
-  /* .Post
-{
-    margin-bottom:2rem;
-} */
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .imgclass {
+    height: 360px;
+  }
 }
