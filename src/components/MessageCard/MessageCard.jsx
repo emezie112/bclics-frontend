@@ -33,7 +33,7 @@ const MessageCard = () => {
                                     
                                 </div>
                               
-                               <span>Hello how you doing jjfhfhdhhysshhshshshsh...</span>
+                               <span>Hello how you doing jjfhfhdhhysshhshshshsh jsjsdjdjdkddkssskskskkuhshshhh...</span>
                             </div>
                     </div>
                     </div>
