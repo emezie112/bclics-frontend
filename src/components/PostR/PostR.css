@@ -1,0 +1,102 @@
+.PostR
+{
+    display: flex;
+    flex-direction: column;
+    padding: -1rem;
+    gap: -1rem;
+    margin-bottom: 1rem;
+}
+
+.imgclassw {
+  height: 100vh;
+  border-radius: 0.5rem;
+  margin-bottom: -27.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+
+.imgclassw>img{
+    width: 100%;
+    height: auto;
+    max-height: 100rem;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postReactw {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: black;
+  gap: 1.5rem;
+  bottom: 5.5rem;
+  right: 1.5rem;
+}
+
+.postReactw > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap:0.5rem;
+  color: white;
+}
+
+.postReactw > div> i {
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+
+}
+
+.postReactw>img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.detailw {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  bottom: 0.8rem;
+  left: 1rem;
+  width: 70%;
+  padding: 10px;
+  background-color: rgba(237, 225, 225, 0.218);
+  border-radius: 1rem;
+  color: white;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 200px){
+  .postReactw{
+    right:0.8rem;
+  }
+  .imgclassw{
+    height: 95vh;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 200px){
+  .PostR
+{
+    display: flex;
+    flex-direction: column;
+    margin-left:1.1rem;
+    margin-right: 1.1rem;
+}
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+  .PostR
+{
+    margin-bottom:2rem;
+}
+}

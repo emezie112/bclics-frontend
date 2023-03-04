@@ -1,6 +1,5 @@
 import React from 'react'
 import './Search.css'
-import Logo from '../../img/logo.png'
 import { UilSearch } from '@iconscout/react-unicons'
 import LogoSearch from '../../components/LogoSearch/LogoSearch'
 import Posts from '../../components/Posts/Posts'

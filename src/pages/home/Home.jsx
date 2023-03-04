@@ -1,14 +1,10 @@
 import React from 'react'
-import ImageModal from '../../components/ImageModal/ImageModal'
 import LogoSearch from '../../components/LogoSearch/LogoSearch'
-import PostSide from '../../components/PostSide/PostSide'
-import ProfileSide from '../../components/profileSide/ProfileSide'
+import PostSideR from '../../components/PostSideR/PostSideR'
 import RightSide from '../../components/RightSide/RightSide'
 import './Home.css'
-const Home = ({imageNum, setImageNum, imgModal, setImgModal}) => {
+const Home = () => {
   return (
-    <>
-      {imgModal && <><ImageModal imgModal={imgModal} setImgModal={setImgModal} imageNum={imageNum} /></>}
     <div className="Home">
 
       <div className="logss">
@@ -18,7 +14,7 @@ const Home = ({imageNum, setImageNum, imgModal, setImgModal}) => {
       </div>
       
       <div className="Pos">
-        <PostSide imgModal={imgModal} setImageNum={setImageNum} setImgModal={setImgModal} />
+        <PostSideR />
       </div>
 
         
@@ -26,7 +22,6 @@ const Home = ({imageNum, setImageNum, imgModal, setImgModal}) => {
          <RightSide/>
         </div>
     </div>
-  </>
   )
 }
 

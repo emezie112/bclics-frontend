@@ -6,7 +6,7 @@ import './LogoSearch.css'
 
 const LogoSearch = () => {
   return (
-    <div className="LogoSearch">
+    <div className="Logo-Search">
 
       <div className="brow">
        <div className="bclics">
