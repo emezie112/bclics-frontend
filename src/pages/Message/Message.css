@@ -119,15 +119,16 @@
 
 
 @media only screen and (max-width: 300px) and (min-width: 200px){
-  .Chat{
+  /* .Chat{
     left:3rem;
-  }
+  } */
+  
   .row{
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  margin-left: 3rem;
-  margin-right: 5rem
+  /* margin-left: 3rem;
+  margin-right: 5rem */
 }
 }
 

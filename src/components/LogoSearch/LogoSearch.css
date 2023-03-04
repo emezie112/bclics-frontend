@@ -48,11 +48,11 @@
 @media only screen and (max-width: 1000px) and (min-width: 600px){
   .brow {
   height: 9rem;
-  width: 15rem;
+  /* width: 15rem; */
 }
   .bclics {
   height: 9rem;
-  width: 15rem;
+  /* width: 15rem; */
   font-size: 8rem;
 }
 

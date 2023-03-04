@@ -22,18 +22,18 @@ const MessageCard = () => {
                 <>
                 <Link style={{ textDecoration: "none", color: "inherit"}} to='/chat'>
                     
-                <div className="Message">
-                    <div className="MessageCont">
-                        <img src={follower.img} alt="" className="MessageImage" />
-                            <div className="MessageName">
-                                <div className="MessageNameInner">
+                <div className="Messages">
+                    <div className="MessagesCont">
+                        <img src={follower.img} alt="" className="MessagesImage" />
+                            <div className="MessagesName">
+                                <div className="MessagesNameInner">
                                     <span>{follower.username}</span> 
                                     <div>1</div>
-                                    <h5 className="MessageNameOnline"> online</h5>
+                                    <h5 className="MessagesNameOnline"> online</h5>
                                     
                                 </div>
                               
-                               <span>Hello how you doing jjfhfhdhhysshhshshshsh jsjsdjdjdkddkssskskskkuhshshhh...</span>
+                               <span>Hello how you doing jjfhfhdhhysshhshshshsh djdjdkddkssskskskkuhshshhh...</span>
                             </div>
                     </div>
                     </div>
