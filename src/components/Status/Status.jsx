@@ -35,7 +35,7 @@ const Status = () => {
         <div className="IcoS">
           <Icons />
         </div>
-          <div style={{ width: "90%", alignSelf: "flex-end" }} className="MessageT">
+          <div className="MessagT">
             <StatusText/>
           </div>
       </div>
