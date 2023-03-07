@@ -1,50 +1,66 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './StatusText.css'
-import img1 from "../../img/img1.png";
-import img2 from "../../img/img2.png";
-import img3 from "../../img/img3.png";
-import img4 from "../../img/img4.jpg";
+import img1 from "../../img/postpic1.jpg";
+import img2 from "../../img/postpic2.jpg";
+import img3 from "../../img/postpic3.JPG";
+import { UilHeart } from '@iconscout/react-unicons'
+import { UilCommentChartLine } from '@iconscout/react-unicons'
+import { UilShareAlt } from '@iconscout/react-unicons'
+import { UilEye } from '@iconscout/react-unicons'
+import { Link } from 'react-router-dom'
+
 
 const StatusText = () => {
+  const images = [img1, img2, img3]
+  const [currentImage, setCurrentImage] = useState(0)
+  console.log(currentImage, "curr")
   return (
-    <div>
-      <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={img1}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={img2}
-          alt="Second slide"
-        />
+    <div className='statustext'>
+      <div className='line-wrapper'>
+        {images.map((line, index) => {
+        return <div key={index} onClick={() => setCurrentImage(index)} className='line'>
+          <svg fill="#fff" class="hamburger" viewBox="0 0 80 10" width="100">
+            <rect class="line top" width="50" height="6" rx="5"></rect>
+          </svg>
+        </div>
+      })}
+      </div>
+      <div className='statuspic-wrapper' >
+        <img src={images[currentImage]} alt="" />       
+      </div>
 
-        <Carousel.Caption>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={img3}
-          alt="Third slide"
-        />
+      {/* <div className="postReactw">
+        <div>
+          <i><UilHeart /></i>
 
-        <Carousel.Caption>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+          <Link style={{ textDecoration: "none", color: "inherit" }} to='/likes'>
+            <span>
+            {999}
+          </span></Link>
+        
+        </div>
+        <div>
+          <i><UilCommentChartLine /></i>
+          <Link style={{ textDecoration: "none", color: "inherit" }} to='/comments'>
+            <span> 356 </span></Link>
+          
+        </div>
+
+        <div>
+          <i><UilEye/></i>
+          <Link style={{ textDecoration: "none", color: "inherit" }} to='/views'>
+            <span>3000</span></Link>
+          
+        </div>
+        <div>
+          <i><UilShareAlt /></i>
+          <Link style={{ textDecoration: "none", color: "inherit" }} to='/share'>
+            <span> 52 </span></Link>
+          
+        </div>
+            
+      </div> */}
 
     </div>
   )
