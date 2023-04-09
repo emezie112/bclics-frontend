@@ -14,13 +14,12 @@ import { Link } from 'react-router-dom'
 const StatusText = () => {
   const images = [img1, img2, img3]
   const [currentImage, setCurrentImage] = useState(0)
-  console.log(currentImage, "curr")
   return (
     <div className='statustext'>
       <div className='line-wrapper'>
         {images.map((line, index) => {
         return <div key={index} onClick={() => setCurrentImage(index)} className='line'>
-          <svg fill="#fff" class="hamburger" viewBox="0 0 80 10" width="100">
+          <svg fill={`${index === currentImage ? "#fff" : "#969fa7"}`} class="hamburger" viewBox="0 0 80 10" width="100">
             <rect class="line top" width="50" height="6" rx="5"></rect>
           </svg>
         </div>
